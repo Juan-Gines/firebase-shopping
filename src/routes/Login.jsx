@@ -3,11 +3,9 @@ import {
 	getAuth,
 	GoogleAuthProvider,
 	signInWithPopup,
-	signInWithEmailAndPassword,
-	RecaptchaVerifier,
-	signInWithPhoneNumber,
+	signInWithEmailAndPassword,	
 } from 'firebase/auth';
-import { AppContext } from '../../App';
+import { AppContext } from '../App';
 import toast from 'react-hot-toast';
 
 const provider = new GoogleAuthProvider();
@@ -16,7 +14,6 @@ const auth = getAuth();
 const Login = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-  const [telefono, setTelefono] = useState('');
 
 	const { setRoute, setUser } = useContext(AppContext);
 

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import toast from 'react-hot-toast';
-import { AppContext } from '../../App';
+import { AppContext } from '../App';
 
 const auth = getAuth();
 
