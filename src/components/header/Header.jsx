@@ -13,6 +13,7 @@ const Header = () => {
 	const logout = () => {
 		signOut(auth)
 			.then(() => {
+				setRoute('login');
 				toast.success(`Usuario ${user.email} ha deslogueado correctamente`);
 				setUser(null);
 			})
